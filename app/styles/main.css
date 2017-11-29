@@ -52,7 +52,7 @@ body {
 }
 
 /* Supporting marketing content */
-.marketing, .chart {
+.marketing, .chart, .search-form {
   margin: 40px 0;
 }
 .marketing p + h4 {
