@@ -81,3 +81,11 @@ body {
     border-bottom: 0;
   }
 }
+
+.chart hr {
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+    margin: 0px !important;
+    border: 0;
+    border-top: 1px solid #999;
+}

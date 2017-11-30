@@ -44,8 +44,9 @@ angular.module('publicationsApp')
 		        }
 		    },
 		    tooltip: {
-		        headerFormat: '<span style="font-size:10px">Most cited paper in <b>{point.key}</b></span><table>',
-		        pointFormat: '<tr><td style="color:{series.color};padding:0">Title: </td>' +
+		        headerFormat: '<span style="font-size:10px">Number Of Publications : <b>{point.y}</b></span><hr/>' +
+		        			'<span style="font-size:10px">Most cited paper in <b>{point.key}</b></span>',
+		        pointFormat: '<table><tr><td style="color:{series.color};padding:0">Title: </td>' +
 		            '<td style="padding:0"><b>{point.mostCited.title}</b></td></tr>' +
 		            '<tr><td style="color:{series.color};padding:0">Journal Title: </td>' +
 		            '<td style="padding:0"><b>{point.mostCited.journalTitle}</b></td></tr>' +
