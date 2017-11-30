@@ -18,15 +18,15 @@ You can check if you have Node and npm installed by typing:
 node --version && npm --version
 ```
 
-If you need to upgrade or install Node, the easiest way is to use an installer for your platform. Download the .msi for Windows or .pkg for Mac from the [NodeJS website] (https://nodejs.org/).
+If you need to upgrade or install Node, the easiest way is to use an installer for your platform. Download the .msi for Windows or .pkg for Mac from the [NodeJS website](https://nodejs.org/).
 
-The [npm] (https://www.npmjs.com/) package manager is bundled with Node, although you might need to update it. Some Node versions ship with rather old versions of npm. You can update npm using this command:
+The [npm](https://www.npmjs.com/) package manager is bundled with Node, although you might need to update it. Some Node versions ship with rather old versions of npm. You can update npm using this command:
 
 ```
 npm install --global npm@latest
 ```
 
-If you don't have Git, grab the installers from the [git website] (https://git-scm.com/).
+If you don't have Git, grab the installers from the [git website](https://git-scm.com/).
 
 ## Build & development
 
