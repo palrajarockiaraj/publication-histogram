@@ -9,12 +9,6 @@
  */
 angular.module('publicationsApp')
   .controller('MainCtrl', ['$scope', '$http', 'AppConstants', 'util', function ($scope, $http, AppConstants, util) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
     $scope.chart = {};
     $scope.chart.title = "Publication Histogram";
     $scope.showChart = false;
@@ -22,7 +16,7 @@ angular.module('publicationsApp')
 
 	$scope.search = function(){		
 	    $http.get(AppConstants.WS_URL+'/search?query='+$scope.searchQuery+'&sort=CITED%20desc&format=json').then(function(response){
-	    	if(!response.data.errCode){    		
+	    	if(response.data.resultList.result.length > 0){    		
 		    	var allYears = [];
 		    	angular.forEach(response.data.resultList.result, function(value, key){
 		    		allYears.push(value.pubYear);
@@ -41,6 +35,4 @@ angular.module('publicationsApp')
 	    	console.log(errorResponse);
 	    });
 	};
-
-    
   }]);

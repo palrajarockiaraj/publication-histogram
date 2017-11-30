@@ -17,7 +17,9 @@ angular.module('publicationsApp')
       link: function postLink(scope, element, attrs) {
 		Highcharts.chart(element[0], {
 		    chart: {
-		        type: 'column'
+		        type: 'column',
+		        width: 1000,
+		        // height: 600
 		    },
 		    title: {
 		        text: scope.chartOptions.title
