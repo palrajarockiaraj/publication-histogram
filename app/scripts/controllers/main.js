@@ -12,6 +12,7 @@ angular.module('publicationsApp')
     $scope.chart = {};
     $scope.chart.title = "Publication Histogram";
     $scope.showChart = false;
+    $scope.chart.categories = [];
 	$scope.chart.chartData = [];
 
 	$scope.search = function(){		
@@ -24,7 +25,13 @@ angular.module('publicationsApp')
 
 		    	var count = util.getCount(allYears);
 		    	angular.forEach(count, function(value, key){
-		    		$scope.chart.chartData.push([+key, value]);
+		    		var tempObject = {},
+		    		firstMatchingPubYear = util.findFirstMatchingPubYear(response.data.resultList.result, key);
+
+		    		tempObject.y = value;
+		    		tempObject.mostCited = firstMatchingPubYear;
+		    		$scope.chart.categories.push(key);
+		    		$scope.chart.chartData.push(tempObject);
 		    	});
 
 		    	$scope.showChart = true;

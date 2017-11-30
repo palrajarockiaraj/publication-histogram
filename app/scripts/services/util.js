@@ -16,7 +16,15 @@ angular.module('publicationsApp')
       return count;
     };
 
+    var findFirstMatchingPubYear = function(arrayValue, matchValue){
+      var filterPubYear = arrayValue.filter(function(e) {
+        return e.pubYear == matchValue;
+      })[0];
+      return filterPubYear;
+    };
+
     return {
-      getCount: getCount
+      getCount: getCount,
+      findFirstMatchingPubYear: findFirstMatchingPubYear
     };
   });
