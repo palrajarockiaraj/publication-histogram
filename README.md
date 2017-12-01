@@ -37,4 +37,4 @@ Run `grunt` for building and `grunt serve` for preview.
 Running `grunt test` will run the unit tests with karma.
 
 ## Live working URL
-(https://paul-arockiyam.github.io/publication-histogram/)
+[https://paul-arockiyam.github.io/publication-histogram/](https://paul-arockiyam.github.io/publication-histogram/)
