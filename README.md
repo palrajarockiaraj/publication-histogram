@@ -1,9 +1,9 @@
-# publications
+# Publications Histogram based on Europe PMC REST API Response
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.16.0.
 
-## SET UP YOUR DEV ENVIRONMENT
+## Setting up your DEV ENVIRONMENT
 
 ### Install prerequisites
 
