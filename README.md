@@ -30,7 +30,25 @@ If you don't have Git, grab the installers from the [git website](https://git-sc
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+1. Clone the project from the following GitHub Repository:
+
+```
+https://github.com/paul-arockiyam/publication-histogram.git
+```
+
+2. Install Bower and Grunt using the below command:
+
+```
+npm install -g grunt-cli bower
+```
+
+3. Run the following command to download Node and Application specific dependencies:
+
+```
+npm install && bower install
+```
+
+4. Finally, Run `grunt serve` for running/previewing the application.
 
 ## Testing
 
