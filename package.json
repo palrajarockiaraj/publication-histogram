@@ -33,6 +33,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "cryptiles": "^4.1.2"
+    "cryptiles": "^4.1.2",
+    "hawk": "^7.0.7"
   }
 }
